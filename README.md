@@ -1,8 +1,8 @@
-# House Hunting
+# Your Foundation
 
 ## Description
 
-After graduating from Momentum, you start a new job with a good salary and now you want to save up to buy a house. You're going to need a down payment, though. In this lab, you are going to write a program to help you determine how long it will take to save enough money to make the down payment.
+After graduating from Momentum, you start a new job with a good salary and now you want to start a foundation to fund community projects. In this lab, you are going to write a program to help you determine how long it will take to raise the money for your dream project.
 
 ## Objectives
 
@@ -21,45 +21,40 @@ After completing this assignment, you should be able to:
 
 ## Details
 
-1. Call the cost of your dream home `total_cost​`.
-2. Call the portion of the cost needed for a down payment `portion_down_payment​`. For simplicity, assume that `portion_down_payment` = 0.25 (25%).
-3. Call the amount that you have saved thus far `current_savings​`. You start with a current savings of $0.
-4. Assume that you invest your current savings wisely, with an annual return of `r` ​(in other words, at the end of each month, you receive an additional `current_savings*r/12`​ funds to put into your savings – the 12 is because `r`​ is an annual rate). Assume that your investments earn a return of `r` = 0.04 (4%).
-5. Call your annual salary `annual_salary​`.
-6. Assume you are going to dedicate a certain amount of your salary each month to saving for the down payment. `Call that portion_saved`​. This variable should be in decimal form (i.e. 0.1 for 10%).
-7. At the end of each month, your savings will be increased by the return on your investment, plus a percentage of your monthly salary ​(annual salary / 12).
+1. Call the cost of your dream project `total_cost​`.
+2. Call the amount that your foundation has saved thus far `current_savings​`. You start with a current savings of $0.
+3. Assume that your foundation invests its current savings wisely, with an annual return of `r` ​(in other words, at the end of each month, you receive an additional `current_savings*r/12`​ funds to put into your savings – the 12 is because `r`​ is an annual rate). Assume that your investments earn a return of `r` = 0.04 (4%).
+4. Call your annual donations `annual_donations​`.
+5. At the end of each month, your savings will be increased by the return on your investment, plus your monthly donations ​(annual donations / 12).
 
-Write a program to calculate how many months it will take you to save up enough money for a down payment.
+Write a program to calculate how many months it will take you to save up enough money for your dream project.
 
 Your program should ask the user to enter the following variables:
 
-1. The starting annual salary (`annual_salary`)
-2. The portion of salary to be saved (`portion_saved`)
-3. The cost of your dream home (`total_cost`)
+1. The starting annual donations (`annual_donations`)
+2. The cost of your dream project (`total_cost`)
 
 Please make your program print results in the format shown in the test cases below.
 
 ### Test Case 1
 
 ```
-Enter your annual salary: 120000
-Enter the percent of your salary to save, as a decimal: .10
-Enter the cost of your dream home: 1000000
-Number of months: 183
+Enter your annual donations: 250,000
+Enter the cost of your dream project: 1000000
+Number of months: 42
 ```
 
 ### Test Case 2
 
 ```
-Enter your annual salary: 80000
-Enter the percent of your salary to save, as a decimal: .15
-Enter the cost of your dream home: 500000
-Number of months: 105
+Enter your annual donations: 80000
+Enter the cost of your dream project: 500000
+Number of months: 68
 ```
 
 ### Hints
 
-Write all code in `house_hunting.py`. To run this file, run `python3 house_hunting.py` on the command line.
+Write all code in `main.py`. To run this file, click "run" in your repl.
 
 To help you get started, here is a rough outline of the stages you should probably follow in writing your code:
 
@@ -72,11 +67,9 @@ To help you get started, here is a rough outline of the stages you should probab
 Add the ability to set the percentage of the total cost you need for a down payment and the rate of expected return on investment. For each of these, allow the user to enter the value. If they choose not to enter a value, then use the default, like in the following case:
 
 ```
-Enter your annual salary: 80000
-Enter the percent of your salary to save, as a decimal: .15
+Enter your annual donations: 80000
 Enter the expected annual rate of return [0.04]:
-Enter the cost of your dream home: 500000
-Enter the percent of your home's cost to save as a down payment [0.25]: 0.2
+Enter the cost of your dream project: 500000
 Number of months: ???
 ```
 
